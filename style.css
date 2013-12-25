@@ -1,0 +1,148 @@
+/*	Resets
+	------	*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+ul, ol {list-style-position: inside; padding: 0;}
+
+a img {border: 0;}
+
+/* MICRO CLEARFIX HACK */
+.cf:before, .cf:after {content:" "; display: table;} /* For modern browsers */
+.cf:after {clear:both;}
+.cf {*zoom:1;} /* For IE 6/7 (trigger hasLayout) */
+
+/* Selection colours (easy to forget) */
+::selection 	 	{background: #e6d6c7;}
+::-moz-selection 	{background: #e6d6c7;}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: #e6d6c7;}
+
+/* HYPERLINKS */
+a {text-decoration: none; color: #d11400; transition: all 0.3s ease-out;}
+a:hover {color: #c54d31; text-decoration: underline;}
+a:focus {outline: thin dotted}
+a:hover, a:active {outline: none} /* Better CSS Outline Suppression */
+
+/* MEDIA */
+figure {margin: 0}
+img, object {max-width: 100%;	_width: 100%; height: auto;} /* Fluid images */
+img {border: 0;	-ms-interpolation-mode: bicubic} /* Improve IE's resizing of images */
+/* responsive videos */
+.video { position: relative; nowhitespace: afterproperty; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+    .video iframe, .video object, .video embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100%;
+}
+
+*, *:before, *:after{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+
+@font-face{font-family:'ProximaNovaSemiBold';src:url("font/ProximaNova-Sbold-webfont.eot");src:url("font/ProximaNova-Sbold-webfont.eot?#iefix") format('embedded-opentype'),url("font/ProximaNova-Sbold-webfont.woff") format('woff'),url("font/ProximaNova-Sbold-webfont.ttf") format('truetype'),url("font/ProximaNova-Sbold-webfont.svg#webfont") format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'ProximaNovaBold';src:url("font/ProximaNova-Bold-webfont.eot");src:url("font/ProximaNova-Bold-webfont.eot?#iefix") format('embedded-opentype'),url("font/ProximaNova-Bold-webfont.woff") format('woff'),url("font/ProximaNova-Bold-webfont.ttf") format('truetype'),url("font/ProximaNova-Bold-webfont.svg#webfont") format('svg');font-weight:normal;font-style:normal}
+
+
+
+body{background: #f5f5f5 url("bg.png") repeat; font: normal 100% Verdana, Arial, sans-serif; color: #111; border-top: 5px solid #10131a;}
+
+h1,h2,h3,h4{font-family: 'ProximaNovaSemiBold', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: normal; margin: 0; padding: 0; text-transform: uppercase; letter-spacing: 1px;}
+
+
+header{width: 100%; position: fixed; background: #d85f18; border-bottom: 2px solid #be4f0d; opacity: 0.98; top: 0; z-index: 1000;}
+	header div{width: 95%; margin: 0 auto; padding: 0.5em; font-family: 'Lato', Arial, sans-serif; text-transform: uppercase; letter-spacing: 1px;}
+	header nav{float: right; margin-top: -1.7em;}
+		header nav ul li{display: inline; padding: 0 0 0 1em; font-size: 0.825em; letter-spacing: 1px;}
+			header nav ul li:first-child{padding: 0;}
+			header nav ul li a{color: #fefefe;}
+				header nav ul li a:hover{color: #333; text-decoration: none;}
+
+#container{width: 100%; max-width: 700px; padding: 0.5em 2em; margin: 0 auto;}
+	nav#main{width: 100%; margin: 0.5em 0; padding-bottom: 1em; border-bottom: 3px double #e3e3e3;}
+		nav#main a:hover{text-decoration: none;}
+		nav#main h2{float: left; background: url(logo.png) no-repeat; width: 50px; height: 50px; text-indent: 100%; white-space: nowrap; overflow: hidden;}
+			nav#main h2 a{display: block;}
+		nav#main ul{width: 82%;}
+			nav#main ul li{display: inline; vertical-align: top; font-family: 'ProximaNovaSemiBold', 'Helvetica Neue', Helvetica, Arial, sans-serif; text-transform: uppercase; letter-spacing: 1px; text-align: center;}
+				nav#main ul li p{display: none;}
+					nav#main ul li a{display: inline; padding: 0 0.875em; text-shadow: 0 1px 0 #e6d6c7;}
+					nav#main ul li a:hover{background: #e6d6c7; border-radius: 5px;}
+
+	article{margin-bottom: 1em; padding: 1em 0; font-size: 0.8em; line-height: 1.5em; border-bottom: 3px double #e3e3e3;}
+		article h1{font-size: 1.4em; line-height: 1.4em; margin-bottom: 0.3em;}
+			article h1 a{color: #10131a;}
+			article h1 a:hover{color: #d11400; text-decoration: none;}
+		article p{margin-bottom: 1em;}
+		article p a{text-decoration: underline;}
+		article ul,article ol{margin-bottom: 1em;}
+		article img{background: #fff; border: 1px solid #fff; padding: 1%; -webkit-box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.5), inset 0px 0px 5px rgba(51, 51, 51, 0.1); -moz-box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.5), inset 0px 0px 5px rgba(51, 51, 51, 0.1); box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.5), inset 0px 0px 5px rgba(51, 51, 51, 0.1);}
+		article figure img{margin-bottom: 1em;}
+		article pre,article code{display: block; background: #111; color: #fff; padding: 1em; margin-bottom: 1em;}
+		article blockquote{border-left: 2px solid #b17447; padding-left: 1em; margin-bottom: 1em;}
+		article cite{display: inline-block; margin-bottom: 1em;}
+		article .chat ul {list-style: none;}
+	        article .chat ul li {background: rgba(255,255,255,0.3); padding: 5px 10px; border: 1px solid #ccc; border-width: 1px 1px 0 1px;}
+	        article .chat ul li:last-child{border-width: 1px;}
+	        article .chat ul li.even {background: rgba(255,255,255,0.6);}
+	    	article .chat span.speaker {font-weight: bold; margin-right: 5px;}
+		article .audio figure img{float: left; margin-right: 1.5em;}
+		
+
+	article .meta{clear: both; font-family: Verdana, Arial, sans-serif; font-size: 0.9em; background: transparent; color: #777;}
+		article .meta p{margin-bottom: 0;}
+		article .meta ul li{display: inline-block;}
+			article .meta ul li:after{content: ", ";}
+			article .meta ul li:first-child:after{content: "";}
+			article .meta ul li:last-child:after{content: "";}
+		article .meta a{color: #444; font-weight: normal; text-decoration: none;}
+		article .meta a:hover{color: #222; text-decoration: underline;}
+
+nav.pagination{float: left; font-size: 0.8em; margin-bottom: 1em;}
+	nav.pagination ul li{display: inline;}
+		nav.pagination a.next,nav.pagination a.prev,nav.pagination a.active{display: inline-block; padding: 0 10px;}
+		nav.pagination a.next,nav.pagination a.prev{padding: 0;}
+		nav.pagination a.page-num{padding: 0 10px;}
+
+.to-top{float: right; font-size: 0.7em; text-transform: uppercase; text-align: right; margin-bottom: 1em;}
+
+footer{clear: both; bottom: 0; left: 0; background: #333740 url("footer-bg.gif") repeat; border-top: 1px solid #10131a; padding: 0.5em 0;}
+	footer #main{width: 100%; margin: 0 auto; max-width: 700px; padding: 0.5em 2em;}
+		footer .col{margin: 0 0 1em; padding: 0 1em; color: #fafafa; font-size: 0.8em;}
+			footer .col h4{font-size: 1.1em; margin-bottom: 0.3em;}
+			footer .col ul li{display: inline; padding-right: 1em;}
+			footer .col a{color: #fcf578;}
+			footer .col a:hover{color: #bdb751;}
+		footer .line{border-top: 1px solid #292c34; border-bottom: 1px solid #3c414c; width: 100%; height: 0; margin: 0 0 1em;}
+
+/* SMALL TABLET 600px+ */
+@media only screen and (min-width: 37.5em) {
+
+}
+
+/* TABLET/NETBOOK 768px+ */
+@media only screen and (min-width: 43.75em) { 
+
+}
+
+/* LANDSCAPE TABLET/NETBOOK/LAPTOP 1024px+ */
+@media only screen and (min-width: 64em) { 
+
+}

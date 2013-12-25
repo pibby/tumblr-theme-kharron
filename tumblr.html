@@ -1,0 +1,428 @@
+<!-- <!doctype html> Tumblr adds this automatically -->
+<html>
+<!--
+
+Theme: Katie
+Updated: August 13, 2013
+Created: by Katie Harron (pibby.tumblr.com)
+    Google Webfonts: Merriweather
+    Icons: http://fontello.com/
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="google-site-verification" content="FHh8JF6YWHjdPlHRAAUz6MQQzrj9Ux7f_ZxzhD2obJ4">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="katie harron,front-end web developer,{block:TagPage}{Tag}, {/block:TagPage} {block:Permalink}{block:Posts}{block:Tags}{Tag}, {/block:Tags} {/block:Posts}{/block:Permalink}">
+	<meta name="description" content="{MetaDescription}">
+	<meta name="title" content="{block:SearchPage}Search results for: {SearchQuery}{/block:SearchPage}{block:PostSummary}{PostSummary} | {/block:PostSummary}{block:PostTitle}{PostTitle} - {/block:PostTitle}{Title}">
+	<meta name="generator" content="Katie Harron (pibby.com)">
+	<meta name="author" content="Katie Harron (pibby.com)">
+	<meta name="text:Pinterest Username" content="pibbydotcom">
+	<meta name="text:LastFM Username" content="pibby">
+	<meta name="text:Twitter Username" content="pibby">
+	<meta name="text:Instagram Username" content="pibby">
+	<meta name="if:Show Instagram" content="1">
+	<meta name="if:Show Tweets" content="1">
+	<meta name="text:Disqus Shortname" content="pibby">
+	<meta name="text:AddThis Publisher ID" content="ra-5152332e74077378">
+	<meta name="text:Google Analytics ID" content="UA-292561-1">
+    <meta name="p:domain_verify" content="b23cd7d3ea8ff6a6de079a1c31b8486c"/>
+
+	<title>{block:PostSummary}{PostSummary} | {/block:PostSummary}{block:SearchPage}{lang:Search results for SearchQuery} | {/block:SearchPage}{block:TagPage}{Tag} | {/block:TagPage}{block:DayPage}{lang:Posted on DayOfMonth Month Year} | {/block:DayPage}{Title}</title>
+
+	<link rel="shortcut icon" href="{Favicon}">
+	<link rel="apple-touch-icon" href="{PortraitURL-128}">
+	{block:PermalinkPage}
+      {block:Posts}
+      {block:Date}
+      <!-- Canonical h5bp.com/docs/head-Tips/#urls -->
+      <link rel="canonical" href="{Permalink}">
+      <!-- Shortlink h5bp.com/docs/head-Tips/#urls -->
+      <link rel="shortlink" href="{ShortURL}">
+      {/block:Date}
+      {/block:Posts}
+    {/block:PermalinkPage}
+
+	<link rel="sitemap" href="/sitemap.xml">
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}">
+	<link href="http://fonts.googleapis.com/css?family=Merriweather:700" rel="stylesheet">
+	<link rel="stylesheet" href="http://static.tumblr.com/ysbclnq/bgUmrhvgk/katie-harron.min.css">
+
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Calling Modernizr.mq for Responsive images -->
+	<script src="http://static.tumblr.com/ysbclnq/nnOmrhwur/modernizr.custom.pibby.js"></script>
+	<!-- /Modernizr -->
+
+	<!-- custom CSS -->
+    <style>
+        {CustomCSS}
+    </style>
+    <!-- /custom CSS -->
+</head>
+	
+<body lang="en">
+	<div id="container">
+		<header id="logo" class="cf">
+			<h2><a href="/" title="Katie Harron - Front-end Web Developer, Arlington, TX" rel="home">Katie Harron - Front-end Web Developer, Arlington, TX</a></h2>
+
+			<nav id="quicknav">
+				<ul>
+					<li><a href="/ask">Ask</a></li>
+					<li><a href="/tag-cloud">Tags</a></li>
+					<li><a id="menu"><i class="icon-menu"></i> Menu</a></li>
+				</ul>
+			</nav>
+
+			<p class="intro">{Description}</p>
+		</header>
+
+		<aside id="menu-panel">
+			<div class="close"><i class="icon-cancel"></i> Close</div>
+			<h4><i class="icon-search"></i> Search</h4>
+			<div class="search">
+				<form action="/search" method="get">
+		        	<input type="text" name="q" value="{SearchQuery}" placeholder="{lang:Search} &amp; press enter" />
+	            </form>
+			</div>
+
+			<h4>Menu</h4>
+			<ul class="panel-nav">
+				<li><a href="/ask" title="Ask a Question or Get in Touch">Ask</a></li>
+				<li><a href="http://www.tumblr.com/liked/by/{Name}" title="Posts I Like">Likes</a></li>
+				<li><a href="/archive" title="Archive">Archive</a></li>
+				<li><a href="/tag-cloud" title="Tag Cloud - Frequently used tags">Tags</a></li>
+				<li><a href="{RSS}" title="RSS Feed">RSS</a></li>
+			</ul>
+
+			<h4>Free Themes</h4>
+			<ul class="panel-nav">
+				<li><a href="http://pibby.com/rp-theme" title="Free Tumblr Theme: RP">Tumblr Theme: RP</a></li>
+			</ul>
+
+			<h4>Social Networks</h4>
+			<ul class="social">
+				{block:IfTwitterUsername}<li><a href="http://www.twitter.com/{text:Twitter Username}" title="Twitter" rel="me external"><i class="icon-twitter-1"></i></a></li>{/block:IfTwitterUsername}
+				{block:IfInstagramUsername}<li><a href="http://www.instagram.com/{text:Instagram Username}" title="Instagram" rel="me external"><i class="icon-camera"></i></a></li>{/block:IfInstagramUsername}
+				{block:IfPinterestUsername}<li><a href="http://pinterest.com/{text:Pinterest Username}" title="Pinterest" rel="me external"><i class="icon-pinterest-1"></i></a></li>{/block:IfPinterestUsername}
+				{block:IfLastFMUsername}<li><a href="http://www.last.fm/user/{text:LastFM Username}" title="Last.fm" rel="me external"><i class="icon-lastfm-1"></i></a></li>{/block:IfLastFMUsername}
+			</ul>
+
+			<div class="hide-small">
+				{block:IfShowInstagram}
+				<h4><a href="http://www.instagram.com/{text:Instagram Username}" rel="me external"><i class="icon-camera"></i> Instagram Pics</a></h4>
+			    <div id="instagram">
+			        <ul class="instagram cf">
+			            <script id="embedagram" src="//static.tumblr.com/ysbclnq/I1Dmmb8tx/embedagram.js" data-username="{text:Instagram Username}" data-count="3"></script>
+			        </ul>
+			    </div>
+			    {/block:IfShowInstagram}
+
+				{block:IfShowTweets}
+				<h4><a href="http://www.twitter.com/{text:Twitter Username}" rel="me external"><i class="icon-twitter-1"></i> Recent Tweets</a></h4>
+				<a class="twitter-timeline" width="285" height="500" data-dnt="true" href="https://twitter.com/pibby" data-widget-id="361634798231498752" data-tweet-limit="5" data-chrome="nofooter noheader transparent" data-theme="dark" data-link-color="#c42b59">Tweets by @pibby</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				{/block:IfShowTweets}
+			</div>
+		</aside>
+
+		<section id="posts">
+	        {block:TagPage}
+	        <article class="post">
+				<div class="text">
+		        	<h1>Posts {lang:Tagged with} "{Tag}"</h1>
+		        </div>
+			</article>
+	        {/block:TagPage}
+
+	        {block:SearchPage}
+	        <article class="post">
+				<div class="text">
+		        	<h1>{lang:Found SearchResultCount results for SearchQuery}</h1>
+		        </div>
+			</article>
+	        {/block:SearchPage}
+
+	        {block:NoSearchResults}
+	        <article class="post">
+				<div class="text">
+		        	<h1>{lang:No posts containing SearchQuery}</h1>
+		        </div>
+			</article>
+	        {/block:NoSearchResults}
+
+			{block:Posts}
+			<article class="post">
+				{block:Date}
+				<div class="details">
+					{block:Title}<h1><a href="{Permalink}" rel="bookmark">{Title}</a></h1>{/block:Title}
+					<ul>
+						<li class="date"><a href="{Permalink}" title="Posted on {Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}, {TimeAgo}"><time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}">{Month} {DayOfMonth}, {Year}</time></a></li>
+						<li>·</li>
+						<li><i class="icon-heart"></i> <a href="{Permalink}#notes" title="Notes">{NoteCount}</a></li>
+						<li>·</li>
+						<li><a href="{ReblogURL}" title="Reblog"><i class="icon-shuffle"></i></a></li>
+						<li>·</li>
+						{block:IfAddthisPublisherID}<li>
+						<!-- AddThis Button BEGIN --><a class="addthis_button_compact" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid={text:AddThis Publisher ID}" addthis:url="{ShortURL}" addthis:title="{PostTitle}" title="Bookmark and Share" target="_blank"><span><i class="icon-export"></i> Share</span></a><!-- AddThis Button END -->
+						</li>{/block:IfAddthisPublisherID}
+					</ul>
+				</div>
+				{/block:Date}
+
+				{block:Photo}
+				<div class="photo">
+					<figure>
+						{LinkOpenTag}<img class="img" src="{PhotoURL-250}" data-medium="{PhotoURL-500}" data-large="{PhotoURL-1280}" alt="{PhotoAlt}" />{LinkCloseTag}
+					</figure>
+					{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+				</div>
+				{/block:Photo}
+
+				{block:Panorama}
+				<div class="panorama">
+					<figure>
+						{LinkOpenTag}<img class="img" src="{PhotoURL-250}" data-medium="{PhotoURL-500}" data-large="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCloseTag}
+					</figure>
+					{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+				</div>
+				{/block:Panorama}
+
+				{block:Photoset}
+				<div class="photoset" data-layout="{PhotosetLayout}" data-id="photoset{PostID}">
+					<figure>
+						{block:Photos}
+					      <img class="img" src="{PhotoURL-250}" data-medium="{PhotoURL-500}" data-large="{PhotoURL-1280}" {block:HighRes}data-highres="{PhotoURL-HighRes}"{/block:HighRes} alt="{PhotoAlt}" />
+					    {/block:Photos}
+					</figure>
+					{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+				</div>
+				{/block:Photoset}
+
+				{block:Text}
+				<div class="text">
+					{Body}
+				</div>
+				{/block:Text}
+
+				{block:Link}	
+				<div class="link">
+					<h2 class="title"><a href="{URL}" rel="external"><i class="icon-link"></i>&nbsp;{Name}</a></h2>
+					{block:Description}<div class="caption">{Description}</div>{/block:Description}
+				</div>
+				{/block:Link}
+
+				{block:Audio}
+				<div class="audio cf">
+					{block:AlbumArt}
+					<figure>
+						<img src="{AlbumArtURL}" alt="{TrackName} album art" width="250" height="250" />
+					</figure>
+					{/block:AlbumArt}
+					{block:TrackName}<h2><a href="{Permalink}">{TrackName}</a></h2>
+					{block:Artist}<p>{Artist}{/block:Artist}{block:Album}<br />{Album}</p>{/block:Album}{/block:TrackName}
+					{AudioPlayerBlack}
+					<br />
+					{RawAudioURL}
+					{block:ExternalAudio}<p><a href="{ExternalAudioURL}" rel="external"><img src="http://thegeekdesigner.com/tumblr_v4/images/icon_play_button.png" alt="Play"></a></p>{/block:ExternalAudio}
+	        		{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+				</div>
+				{/block:Audio}
+
+				{block:Video}
+				<div class="video">
+					<figure>
+						{Video-500}
+					</figure>
+					{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+				</div>
+				{/block:Video}
+
+				{block:Quote}
+				<div class="quote">
+					<blockquote>"{Quote}"</blockquote>
+					{block:Source}<cite>{Source}</cite>{/block:Source}
+				</div>
+				{/block:Quote}
+
+				{block:Answer}
+				<div class="answer">
+					<blockquote>
+						<img src="{AskerPortraitURL-48}" alt="Asker portrait" class="asker-portrait" />
+						<p class="asker">{Asker} asked:</p>
+						<p class="question">{Question}</p>
+					</blockquote>
+					<div class="caption">{Answer}</div>
+				</div>
+				{/block:Answer}
+
+				{block:Chat}
+				<div class="chat">
+					<ul>
+						{block:Lines}
+						<li class="{Alt} user_{UserNumber}">
+							{block:Label}<span class="speaker">{Label} </span>{/block:Label}
+							{Line}
+						</li>
+						{/block:Lines}
+					</ul>
+				</div>
+				{/block:Chat}
+
+				{block:HasTags}
+				<footer class="tags">
+					<ul>
+						{block:Tags}<li><a href="{TagURL}" rel="tag">{Tag}</a></li>{/block:Tags}
+					</ul>
+				</footer>
+				{/block:HasTags}
+
+				<footer class="details">
+					<ul>
+						<li><a href="{Permalink}" rel="bookmark"><i class="icon-link"></i> Permalink</a></li>
+						{block:ContentSource}<li>·</li><li><a href="{SourceURL}" rel="external nofollow">Source: {SourceTitle}</a></li>{/block:ContentSource}
+						{block:RebloggedFrom}<li>·</li><li><a href="{ReblogParentURL}" rel="external nofollow">Via: {ReblogParentName}</a></li>{/block:RebloggedFrom}
+					</ul>
+				</footer>
+			</article>
+
+			{block:Permalink}
+			{block:PermalinkPagination}
+			<nav class="post-nav">
+				{block:NextPost}<span id="prev-nav"><a href="{NextPost}" rel="next">Newer</a></span>{/block:NextPost}
+				{block:PreviousPost}<span id="next-nav"><a href="{PreviousPost}" rel="prev">Older</a></span>{/block:PreviousPost}
+			</nav>
+			{block:IfDisqusShortname}
+			<div id="disqus_thread"></div>
+			<script src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+			<noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">View the discussion thread.</a></noscript>{/block:IfDisqusShortname}
+			{/block:PermalinkPagination}
+			{block:PostNotes}
+            <div class="post-notes">
+            	<h3>Notes on this post...</h3>
+                {PostNotes}
+            </div>
+            {/block:PostNotes}
+            {/block:Permalink}
+			{/block:Posts}
+
+			<p class="to-top"><a href="#top" title="Back to top of page">⬆ Back to top</a></p>
+
+			{block:Pagination}
+			<nav class="pagination">
+                {block:PreviousPage}<a href="{PreviousPage}" title="Newer posts" class="next">Newer</a>{/block:PreviousPage}
+                {block:JumpPagination length="5"}
+                	{block:CurrentPage}<a href="#" class="page-num active">{PageNumber}</a>{/block:CurrentPage}
+                    {block:JumpPage}<a href="{URL}" class="page-num">{PageNumber}</a>{/block:JumpPage}
+                {/block:JumpPagination}
+                {block:NextPage}<a href="{NextPage}" title="Older posts" class="prev">Older</a>{/block:NextPage}
+	        </nav>
+	        {/block:Pagination}
+		</section>
+
+		<footer class="copyright">
+			<p>&copy; {CopyrightYears} {Name} | Theme created by <a href="http://www.pibby.com" title="Theme created by Katie Harron (pibby.com)">Katie Harron</a> | Powered by <a href="http://www.tumblr.com" rel="external">Tumblr</a></p>
+		</footer>
+	</div>
+	
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//static.tumblr.com/ysbclnq/0osmrhylc/scripts.js"></script>
+<!-- add titles to photos, photosets, video, audio -->
+<script>
+$(".post").each(
+    function(){
+    var a=$(this).find(".caption > p > strong").first().text();
+    if (a != ""){
+	    var b=$(this).find(".date > a").attr("href");
+	    $(this).find("div.details").prepend("<h1><a href='"+b+"'>"+a+"</a></h1>"); 
+	    $(this).find(".caption > p").first().remove();
+    }
+});
+</script>
+<!-- /end add titles -->
+
+<!-- Photoset Grid -->
+<script>$('.photoset').photosetGrid({highresLinks: true,gutter: '2px'});</script>
+<!-- /Photoset Grid -->
+
+<!-- Sliding Menu Panel -->
+<script>
+$(document).ready(function() {
+    $('#menu').on('click', function() {
+        $('#menu-panel').animate({
+            'width': 'show'
+        });
+    });
+
+    $('.close').on('click', function() {
+            $('#menu-panel').animate({
+                'width': 'hide'
+        });
+    });
+});
+</script>
+<!-- /Sliding Menu Panel -->
+
+<!-- Responsive Images: Modernizr.mq -->
+<script>
+$(".img").each(function() {
+	if (Modernizr.mq('only all and (min-width:480px and max-width: 768px)')) {
+		$(this).attr("src", $(this).attr("data-medium"));
+	}
+	if (Modernizr.mq('only all and (min-width:769px)')) {
+		$(this).attr("src", $(this).attr("data-large"));
+	}
+});
+</script>
+<!-- /Responsive Images: Modernizr.mq -->
+
+<!-- AddThis -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#{text:AddThis Publisher ID}&amp;async=1&amp;domready=1"></script>
+<script>
+function initAddThis() 
+{
+  addthis.init()
+}
+// After the DOM has loaded...
+initAddThis();
+</script>
+<!-- /AddThis -->
+
+<!-- Google Analytics -->
+{block:IfGoogleAnalyticsID}
+<script>
+    var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', '{text:Google Analytics ID}']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+{/block:IfGoogleAnalyticsID}
+<!-- /Google Analytics -->
+
+<!-- Crazy Egg tracking -->
+<script>
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0016/8642.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<!-- /Crazy Egg tracking -->
+
+<script>
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,473 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"title",
+				"titleadd"
+			],
+			[
+				"photos",
+				"photoset"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"au",
+				"audio"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"bo",
+				"border-bottom"
+			],
+			[
+				"bor",
+				"border-left"
+			],
+			[
+				"div",
+				"divname"
+			],
+			[
+				"ge",
+				"getElementsByTagName"
+			],
+			[
+				"grou",
+				"groupCount"
+			],
+			[
+				"to",
+				"toLocaleDateString"
+			],
+			[
+				"t",
+				"top"
+			],
+			[
+				"desc",
+				"description"
+			],
+			[
+				"cl",
+				"classname"
+			],
+			[
+				"br",
+				"border-radius"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"b",
+				"bold"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"bl",
+				"blockquote"
+			],
+			[
+				"ins",
+				"inset"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"fot",
+				"footer	Tag"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"h",
+				"hidden"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"sec",
+				"section	Tag"
+			],
+			[
+				"ph",
+				"photo"
+			],
+			[
+				"po",
+				"post"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"foot",
+				"footer"
+			],
+			[
+				"post",
+				"post"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"vi",
+				"visited"
+			],
+			[
+				"header",
+				"header-content"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"cont",
+				"container"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"he",
+				"header	Tag"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"fo",
+				"footer"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"list",
+				"list-style"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 269.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 552.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/katie/Sites/badass-titanium/examples/responsive/responsive.html",
+		"/Users/katie/Sites/badass-titanium/examples/responsive/responsive.less",
+		"/Users/katie/Sites/new-tumblr/css/default-tumblr.less",
+		"/Users/katie/Sites/tumblr-RP-custom-04252013.html",
+		"/Users/katie/Sites/new-tumblr/tumblr.html",
+		"/Users/katie/Desktop/index.html",
+		"/Users/katie/Desktop/style.less",
+		"/Users/katie/Desktop/default.less",
+		"/Users/katie/Sites/new-tumblr/css/default.css",
+		"/Users/katie/Sites/new-tumblr/css/pibby-fontello-embedded.css",
+		"/Users/katie/Sites/new-tumblr/font/htaccess",
+		"/Users/katie/Sites/new-tumblr/scripts.js",
+		"/Users/katie/Sites/new-tumblr/css/katie-harron.css",
+		"/Users/katie/Sites/new-tumblr/style.css",
+		"/Users/katie/Sites/mobile-first/index.html",
+		"/Users/katie/Sites/tumblr-snippets.html",
+		"/Users/katie/Downloads/fontello-13d94ecd/css/pibby-fontello-embedded.css",
+		"/Users/katie/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Users/katie/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/katie/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/katie/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/katie/Downloads/index.html",
+		"/Users/katie/Sites/grid-1000/style.css",
+		"/Users/katie/Sites/mobile-first/style.css",
+		"/Users/katie/Downloads/socialtimelinejs.html",
+		"/Users/katie/Sites/grid-1000/index.html",
+		"/Users/katie/Tumblr-Themes/Theme RP/pibby-theme-rp.css",
+		"/Users/katie/Tumblr-Themes/Theme RP/pibby-theme-rp.html",
+		"/Users/katie/Sites/grid-1000/tumblr.html",
+		"/Users/katie/Downloads/pxuPhotoset.min.js",
+		"/Users/katie/Downloads/imagesloaded-min",
+		"/Users/katie/Sites/tumblr-theme-rp/index.html",
+		"/Users/katie/Sites/tumblr-theme-rp/css/frameless.css",
+		"/Users/katie/Sites/khaki/index.html",
+		"/Users/katie/Sites/khaki/style.css",
+		"/Users/katie/Sites/tumblr-theme-rp/tumblr-public.html",
+		"/Users/katie/Tumblr-Themes/README.md",
+		"/Users/katie/Sites/tumblr-theme-rp/tumblr.html",
+		"/Users/katie/Downloads/fontello-e2f7805e/css/pibby-fontello-embedded.css",
+		"/Users/katie/Downloads/fontello-46faeb7f/css/pibby-fontello-embedded.css",
+		"/Users/katie/Downloads/twigkit-semantic.gs-22e0e79/examples/responsive/responsive.less",
+		"/Users/katie/Sites/test-less/css/less/grid.less",
+		"/Users/katie/Sites/test-less/css/style.css",
+		"/Users/katie/Sites/test-less/css/styles.css",
+		"/Users/katie/Sites/test-less/css/grid.less",
+		"/Users/katie/Sites/test-less/css/less/frameless.less",
+		"/Users/katie/Sites/test-less/css/frameless.less",
+		"/Users/katie/Downloads/bootstrap/css/style.css",
+		"/Users/katie/Sites/twitter-theme-backup-03182013"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"uppercase",
+			"linklt",
+			"raspberry",
+			"pink",
+			"groupDate",
+			"open",
+			"float",
+			" drop-shadow",
+			"credit",
+			" curved curved-bot",
+			"li>",
+			"li",
+			"list-style",
+			"h2"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"link-visited",
+			"link-hover",
+			"link",
+			"",
+			"article>",
+			"article"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

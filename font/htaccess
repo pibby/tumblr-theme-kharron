@@ -1,0 +1,7 @@
+<FilesMatch "\.(ttf|ttc|otf|eot|woff|svg)$">
+  <IfModule mod_headers.c>
+      Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>
+AddType application/vnd.ms-fontobject .eot
+AddType application/octet-stream .otf .ttf

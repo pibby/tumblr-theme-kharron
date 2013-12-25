@@ -1,0 +1,315 @@
+/*
+	Frameless			<http://framelessgrid.com/>
+	by Joni Korpi 		<http://jonikorpi.com/>
+	licensed under CC0	<http://creativecommons.org/publicdomain/zero/1.0/>
+*/
+
+
+//
+// Configuration
+//
+
+@font-size: 16; 		// Your base font-size in pixels
+@em: @font-size*1em;	// Shorthand for outputting ems, e.g. "12/@em"
+
+@column: 48;	// The column-width of your grid in pixels
+@gutter: 24;	// The gutter-width of your grid in pixels
+
+
+//
+// Column-widths in variables, in ems
+//
+
+ @1cols: ( 1 * (@column + @gutter) - @gutter) / @em; @1col: @1cols;
+ @2cols: ( 2 * (@column + @gutter) - @gutter) / @em;
+ @3cols: ( 3 * (@column + @gutter) - @gutter) / @em;
+ @4cols: ( 4 * (@column + @gutter) - @gutter) / @em;
+ @5cols: ( 5 * (@column + @gutter) - @gutter) / @em;
+ @6cols: ( 6 * (@column + @gutter) - @gutter) / @em;
+ @7cols: ( 7 * (@column + @gutter) - @gutter) / @em;
+ @8cols: ( 8 * (@column + @gutter) - @gutter) / @em;
+ @9cols: ( 9 * (@column + @gutter) - @gutter) / @em;
+@10cols: (10 * (@column + @gutter) - @gutter) / @em;
+@11cols: (11 * (@column + @gutter) - @gutter) / @em;
+@12cols: (12 * (@column + @gutter) - @gutter) / @em;
+@13cols: (13 * (@column + @gutter) - @gutter) / @em;
+@14cols: (14 * (@column + @gutter) - @gutter) / @em;
+@15cols: (15 * (@column + @gutter) - @gutter) / @em;
+@16cols: (16 * (@column + @gutter) - @gutter) / @em;
+
+
+//
+// Column-widths in a function, in ems
+//
+
+.width (@cols:1) {
+	width: (@cols * (@column + @gutter) - @gutter) / @em;
+}
+
+
+/*
+	Margin, padding, and border resets
+	except for form elements
+*/
+
+body, div,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+/*
+	Consistency fixes
+	adopted from http://necolas.github.com/normalize.css/
+*/
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, nav, section, audio, canvas, video {
+	display: block;
+}
+
+html {
+	height: 100%; 
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+
+	body {min-height: 100%; font-size: 100%;}
+
+sub, sup {
+	font-size: 75%; 
+	line-height: 0; 
+	position: relative; 
+	vertical-align: baseline;
+}
+
+	sup {top: -0.5em;}
+	sub {bottom: -0.25em;}
+
+pre {
+	white-space: pre; 
+	white-space: pre-wrap; 
+	word-wrap: break-word;
+}
+
+b, strong {font-weight: bold;}
+abbr[title] {border-bottom: 1px dotted;}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a img, img {
+	-ms-interpolation-mode: bicubic;
+	border: 0;
+}
+
+input, textarea, button, select {
+	margin: 0;
+	font-size: 100%;
+	line-height: normal;
+	vertical-align: baseline;
+}
+
+	button,
+	html input[type="button"], 
+	input[type="reset"], 
+	input[type="submit"] {
+	    cursor: pointer;
+	    -webkit-appearance: button;
+	}
+	
+	input[type="checkbox"],
+	input[type="radio"] {
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+			 -o-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+				box-sizing: border-box;
+	}
+	
+	textarea {overflow: auto;}
+
+
+/*
+	These are easy to forget
+*/
+
+::selection {
+	background: @link;
+	color: white;
+}
+::-moz-selection {
+	background: @link;
+	color: white;
+}
+
+::-webkit-selection {
+	background: @link;
+	color: white;
+}
+
+img::selection {
+	background: transparent;
+}
+img::-moz-selection {
+	background: transparent;
+}
+
+body {
+	-webkit-tap-highlight-color: rgba(255,0,0, 0.62);
+}
+
+/*
+Custom CSS
+*/
+.border-radius (@radius: 5px){border-radius: @radius; -moz-border-radius: @radius; -webkit-border-radius: @radius;}
+@link: #F54828;
+@link-hover: #F7803C;
+@link-visited: #2790B0;
+
+body{font: normal 100% 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif; background: #f6f6f6 url(../img/bg.png) repeat fixed; color: #333; box-shadow: 0 0 10px rgba(0,0,0,0.2); -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2); -moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);}
+a,a:link{color: @link; text-decoration: none; border-bottom: 1px solid @link;}
+a:visited{color: @link-visited; text-decoration: none; border: 0;}
+a:hover{color: @link-hover; transition: color .2s linear; -webkit-transition: color .2s linear; -moz-transition: color .2s linear; border-bottom: 1px solid @link-hover;}
+.clearfix:before,.clearfix:after{content:"";display:table;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+
+img{max-width: 100%; height: auto; background: #fff; border: 1px solid #fff; padding: 2%; box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.5), inset 0px 0px 5px rgba(51, 51, 51, 0.1); -webkit-box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.5), inset 0px 0px 5px rgba(51, 51, 51, 0.1); -moz-box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.5), inset 0px 0px 5px rgba(51, 51, 51, 0.1);}
+
+#container{margin: 0 auto; padding: 0 4%; max-width: 980px; overflow: hidden;}
+	#container:after{clear: both;}
+	#container:before,#container:after{content: ""; display: table;}
+
+aside{width: 100%; position: relative; font-size: 0.8em; line-height: 1.3em; color: #222;}
+	aside a,aside a:link{color: #777; text-decoration: none; border: 0;}
+		aside a:hover{color: #222;}
+	aside h2,aside h4{font-family: 'Lato','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif; text-transform: uppercase; text-shadow: 0px 1px 1px rgb(240, 240, 240);}
+		aside h2 a,aside h2 a:link,aside h4 a,aside h4 a:link{color: #222;}
+		aside h2{font-size: 1.5em; line-height: 1.25em;}
+		aside h4{font-size: 1em; line-height: 1.25em; margin-bottom: 10px;}
+	aside #blog-title img{padding: 2px; float: left; margin: 0 15px 0 0;}
+	aside .line{float: left; width: 100%; height: 0; margin: 20px 0; border-top: 1px solid #aaa; border-bottom: 1px solid #ddd;}
+	#social ul,#twitter ul,#pages ul,#blog-title ul{list-style: none;}
+		#blog-title ul{margin-top: 20px;}
+		#blog-title ul li{display: inline; margin: 0 5px 0 0;}
+		#social ul li{display: inline; font-size: 1.2em; margin: 0 5px 0 0;}
+		#tweet a{color: #777;}
+			#tweet a:hover{color: #222;}
+
+#posts{width: 100%; margin: 0; font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 0.9em; line-height: 1.6em;}
+	.post{margin: 30px auto; background-color: #fff; box-shadow: 1px 1px 1px #e5eaed;}
+		.post h1{font-size: 1.8em; line-height: 1.4em; margin: -5px 0 0; letter-spacing: 1px; font-family: 'Oswald','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; text-transform: uppercase;}
+			.post h1 + p,.post h1 + blockquote,.post h1 + ul,.post h1 + img{margin-top: 1em;}
+			.post h1 a,.post h1 a:link{text-decoration: none; border: 0;}
+		.post p,.post ul,.post ol,.post blockquote{margin-bottom: 1em;}
+		.post ul,.post ol{list-style-position: inside;}
+		.post figure img{display: block; margin: 0 auto;}
+		.post p:last-child{margin-bottom: 0;}
+
+		.post footer{margin: 20px 0 0; padding: 10px 0 0; border-top: 1px solid #efefef; color: #444;}
+			.post footer ul{list-style: none; font-size: 0.8em;}
+				.post footer ul li{display: inline-block; padding: 0 10px 0 0;}
+				.post footer ul li.tags{padding: 0 0 0 25px;}
+					.post footer ul li a{border: 0; color: #444;}
+						.post footer ul li a:hover{color: @link;}
+		
+			.post .text blockquote{border-left: 2px solid @link; padding-left: 10px;}
+
+			.post .photo img + figcaption,.post .panarama img + figcaption,.post .photoset img + figcaption,.post .video img + figcaption{margin-top: 1.5em;}
+
+			.post .audio figure{float: left; padding-right: 2em;}
+
+			.post .quote blockquote{background: #f1f1f1; .border-radius; padding: 1em;}
+				.post .quote blockquote:before{display: block; font-size: 5em; font-family: 'Oswald',sans-serif; content: "\201C"; position: absolute; left: 40px; top: 105px; color: #ccc;}
+				.post .quote blockquote p{font-size: 1.2em; text-indent: 2.25em; color: #444; margin-bottom: 0; text-shadow: 0px 1px 1px rgb(250, 250, 250);}
+				.post .quote cite{display: block; text-align: right; margin-right: 2em;}
+
+			.post .answer blockquote{background: #f1f1f1; .border-radius; padding: 1em;}
+				.post .answer blockquote:before{display: block; font-size: 5em; font-family: 'Oswald',sans-serif; content: "\201C"; position: absolute; left: 40px; top: 105px; color: #ccc;}
+				.post .answer blockquote p{font-size: 1.2em; text-indent: 2.25em; color: #444; margin-bottom: 0; text-shadow: 0px 1px 1px rgb(250, 250, 250);}
+				.post .answer cite{display: block; text-align: right; margin-right: 2em;}
+					.post .answer cite + p{margin-top: 1em;}
+
+			.post .chat ul{list-style: none;}
+				.post .chat ul li{padding: 5px 10px;}
+					.post .chat ul li:first-child{padding-top: 0;}
+					.post .chat ul li:last-child{padding-bottom: 0;}
+					.post .chat ul li.even{background: #f1f1f1; .border-radius;}
+					.post .chat span.speaker{font-weight: bold; margin-right: 10px;}
+
+			.post .text img,.post .link img,.post .quote img,.post .answer img,.post .chat img,.post .video img{border: 0; text-shadow: 0, 0; padding: 0;}
+
+		.post img.frame{background: #fff; border: 1px solid #fff; padding: 2%; box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.5), inset 0px 0px 5px rgba(51, 51, 51, 0.1); -webkit-box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.5), inset 0px 0px 5px rgba(51, 51, 51, 0.1); -moz-box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.5), inset 0px 0px 5px rgba(51, 51, 51, 0.1);}
+		.post img.frame-center{display: block; margin: 0 auto; background: #fff; border: 1px solid #fff; padding: 2%; box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.5), inset 0px 0px 5px rgba(51, 51, 51, 0.1); -webkit-box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.5), inset 0px 0px 5px rgba(51, 51, 51, 0.1); -moz-box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.5), inset 0px 0px 5px rgba(51, 51, 51, 0.1);}
+		
+		.drop-shadow{position:relative; display: block; padding: 4%; -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;}
+		.drop-shadow:before,.drop-shadow:after{content:""; position:absolute; z-index:-2;}
+
+	nav.pagination ul{list-style: none; width: 100%; text-align: center;}
+		nav.pagination ul li{display: inline;}
+			nav.pagination ul li a{border: 0; color: #444;}
+				nav.pagination ul li a.active{color: @link;}
+			nav.pagination ul li a.page-num{padding: 0 15px;}
+				nav.pagination ul li a:hover.page-num{color: @link;}
+			nav.pagination ul li a.prev,nav.pagination ul li a.next{padding: 5px 10px; background: #444; color: #fff; .border-radius;}
+			nav.pagination ul li a.prev{float: left;}
+			nav.pagination ul li a.next{float: right;}
+				nav.pagination ul li a:hover.prev,nav.pagination ul li a:hover.next{background: @link;}
+
+
+	footer.credit{margin: 20px 0; width: 100%; text-align: center; font-size: 0.825em;}
+		footer.credit a{border: 0; color: #333;}
+			footer.credit a:hover{color: #777;}
+
+/* media queries */
+/* layout for mobile */
+@media screen and (max-width: 480px) {
+	img{max-width: 96%; height: auto; padding: 2%;}
+	aside{width: 100%; position: relative; margin-top: 10px;}
+	aside #blog-title img{padding: 3px;}
+	#about,#twitter,#social,#pages,.line{display: none; height: 0; margin: 0;}
+	#posts{width: 100%; margin: 0;}
+	.post h1{font-size: 1.2em;}
+		.post h1 + p,.post h1 + blockquote,.post h1 + ul,.post h1 + img{margin-top: 0.2em;}
+	.post p{line-height: 1.5em;}
+	.drop-shadow{padding: 5%;}
+	.post .photo img + figcaption,.post .panarama img + figcaption,.post .photoset img + figcaption,.post .video img + figcaption{margin-top: 1em;}
+	.post .quote blockquote:before{display: none;}
+	.post .quote blockquote p{text-indent: 0;}
+	.post .answer blockquote:before{display: none;}
+	.post .answer blockquote p{text-indent: 0;}
+	.post .audio figure{float: none; padding: 0;}
+		.post .audio h1{padding-top: 15px;}
+}
+
+/* layout for tablet */
+@media screen and (max-width: 768px) {
+	img{max-width: 96%; height: auto; padding: 2%;}
+	aside{width: 100%; position: relative; margin-top: 10px;}
+	aside #blog-title img{padding: 3px;}
+	aside .line{margin: 10px 0;}
+	#blog-title ul{margin-top: 5px;}
+	#twitter,#social,#pages,#about .line{display: none; height: 0; margin: 0;}
+	#posts{width: 100%; margin: 0px;}
+	.post .quote blockquote:before{display: none;}
+	.post .quote blockquote p{text-indent: 0;}
+	.post .answer blockquote:before{display: none;}
+	.post .answer blockquote p{text-indent: 0;}
+}
+
+/* layout for larger screen */
+@media screen and (min-width: 1020px) {
+	aside{float: left; width: @4cols; margin-top: 50px; position: fixed;}
+	aside #blog-title img{padding: 4px;}
+	aside #blog-title ul{font-size: 1.25em;}
+	#posts{float: left; width: @11cols; margin: 0 0 0 @5cols;}
+}
